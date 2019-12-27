@@ -8,30 +8,7 @@
     flex-direction:column;
 }
 
-.lower-container{
-    display:flex;
-    flex-direction:row;
-}
 
-.lower-container-left{
-    display: flex;
-    flex-basis: 20%;
-    flex-direction: column;
-    margin-right: 10px;
-}
-
-
-.lower-container-middle{
-    display:flex;
-    flex-basis:60%;
-}
-
-
-.lower-container-right{
-    display:flex;
-    flex-basis:20%;
-    flex-direction:column;
-}
 
 /* NAVBAR */
 .navbar{
@@ -67,6 +44,26 @@ MENUBAR */
     height:60px;
     margin-bottom: 20px;
 }
+
+/* SEARCHBOX */
+
+.searchbox{
+    margin-bottom: 8px;
+}
+
+.searchbox input{
+    border-radius: 50px;
+    height: 35px;
+    width: 220px;
+    background-color: #eff2f2;
+    border: 0px;
+    padding-left: 32px;
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
 
 
 /* STAGES */
@@ -106,6 +103,45 @@ MENUBAR */
  .events ul{
     list-style:none;   
  }
+
+
+ .lower-container{
+    display:flex;
+    flex-direction:row;
+}
+
+.lower-container-left{
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+
+.lower-container-middle{
+    display:flex;
+    flex-basis:60%;
+}
+
+
+.lower-container-right{
+    display:flex;
+    flex-basis:20%;
+    flex-direction:column;
+}
+
+.lower-container-right-dropdown{
+    width: 205px;
+    height: 35px;
+    border: 0;
+    font-size: 14px;
+    font-weight: inherit;
+}
+
+
+.details-element{
+    
+}
 
 
 

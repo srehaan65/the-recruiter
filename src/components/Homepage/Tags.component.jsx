@@ -15,19 +15,22 @@ class Tags extends Component{
         this.onToggle=this.onToggle.bind(this)
     }
     render(){
-    return (
-        <div>
-          <Button color="primary" onClick={this.onToggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
-          {this.state.isOpen &&   <Card>
-              <CardBody>
-              Anim pariatur cliche reprehenderit,
-               enim eiusmod high life accusamus terry richardson ad squid. Nihil
-               anim keffiyeh helvetica, craft beer labore wes anderson cred
-               nesciunt sapiente ea proident.
-              </CardBody>
-            </Card>}
-        </div>
-      );
+        return (
+            <div className="accordian">
+              <div className="accordian-title" onClick={this.onToggle}>Tags</div>
+              {this.state.isOpen &&  
+               <Card className="accordian-card">
+                  <CardBody className="accordian_card-body">
+                     <ul >
+                         <li><span><input type="checkbox"></input></span>Lorem ipsum<span>  xx</span></li>
+                         <li><span><input type="checkbox"></input></span>Lorem ipsum<span>  xx</span></li>
+                         <li><span><input type="checkbox"></input></span>Lorem ipsum<span>  xx</span></li>
+                         <li><span><input type="checkbox"></input></span>Lorem ipsum<span>  xx</span></li>
+                     </ul>
+                  </CardBody>
+                </Card>}
+            </div>
+          );
     }
 }
 

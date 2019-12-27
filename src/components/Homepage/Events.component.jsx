@@ -22,9 +22,9 @@ class Events extends Component{
           <Card  className="accordian-card">
             <CardBody className="accordian_card-body">
                  <ul>
-                     <li>Show All <span><input type="radio"></input></span><span>  xx</span></li>
-                     <li>Scheduleds<span><input type="radio"></input></span><span>  xx</span></li>
-                     <li>No Events<span><input type="radio"></input></span><span>  xx</span></li>
+                     <li><span><input type="radio"></input></span>Show All <span>  xx</span></li>
+                     <li><span><input type="radio"></input></span>Scheduleds<span>  xx</span></li>
+                     <li><span><input type="radio"></input></span>No Events<span>  xx</span></li>
                  </ul>
               </CardBody>
             </Card>}
