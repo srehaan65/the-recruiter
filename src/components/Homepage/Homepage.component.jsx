@@ -32,6 +32,7 @@ class Homepage extends Component {
 
                 <Navbar />
                 <LowerNavbar />
+                <i class="fab fa-accessible-icon"></i>
 
                 <div className="lower-container">
                     <div className="lower-container-left">

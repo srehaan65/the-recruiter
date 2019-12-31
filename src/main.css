@@ -105,6 +105,8 @@ MENUBAR */
  }
 
 
+ /* LOWER CONTAINER */
+
  .lower-container{
     display:flex;
     flex-direction:row;
@@ -117,12 +119,11 @@ MENUBAR */
     margin-right: 10px;
 }
 
-
 .lower-container-middle{
     display:flex;
     flex-basis:60%;
+    flex-direction: column;
 }
-
 
 .lower-container-right{
     display:flex;
@@ -139,9 +140,18 @@ MENUBAR */
 }
 
 
-.details-element{
-    
+/* DETAILS ELEMENT */
+ 
+.lower-container-middle ul{
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
 }
+@media (min-width: 450px) and (max-width: 767px) {
+    
+  }
+
+
 
 
 

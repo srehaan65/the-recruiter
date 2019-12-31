@@ -4,7 +4,7 @@ import DetailsElement from './DetailsElement.component'
 class Details extends Component{
     render(){
         return(
-            <div>
+            <>
                 <DetailsElement />
                 <DetailsElement />
                 <DetailsElement />
@@ -13,7 +13,7 @@ class Details extends Component{
                 <DetailsElement />
                 <DetailsElement />
                 <DetailsElement />
-            </div>
+            </>
         )
     }
 }
