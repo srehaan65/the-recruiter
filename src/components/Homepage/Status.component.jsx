@@ -10,14 +10,19 @@ class Status extends Component{
     constructor(props){
         super(props);
         this.state={
-            isOpen:true
+            isOpen:false
         }
         this.onToggle=this.onToggle.bind(this)
     }
     render(){
         return (
             <div className="accordian">
-              <div className="accordian-title" onClick={this.onToggle}>Status</div>
+              <div className="accordian-title" onClick={this.onToggle}>Status
+              <div className="accordian-image"><img
+                                src="/images/plus.png" alt="plus" height="20px"
+                                style={{ opacity: "1" }} >
+
+                            </img></div></div>
               {this.state.isOpen &&  
                <Card className="accordian-card">
                   <CardBody className="accordian_card-body">

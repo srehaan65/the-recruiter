@@ -12,7 +12,8 @@ import Dropdown from './Dropdown.component'
 import Source from './Source.component';
 import Status from './Status.component';
 import Tags from './Tags.component';
-import Details from './Details.component'
+import Details from './Details.component';
+import FilterButton from './FilterButton'
 
 import '../../../src/main.css'
 
@@ -32,7 +33,6 @@ class Homepage extends Component {
 
                 <Navbar />
                 <LowerNavbar />
-                <i class="fab fa-accessible-icon"></i>
 
                 <div className="lower-container">
                     <div className="lower-container-left">
@@ -52,6 +52,7 @@ class Homepage extends Component {
                         <Status />
                         <Source />
                         <Tags />
+                        <FilterButton />
                     </div>
 
                 </div>
