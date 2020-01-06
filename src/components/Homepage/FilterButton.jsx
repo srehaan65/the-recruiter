@@ -2,7 +2,7 @@ import React from 'react';
 
 const FilterButton = () => {
     return (
-        <div className="filter-button">
+        <div className="">
             <button className="filter-button">
                 Apply Filter
         </button>

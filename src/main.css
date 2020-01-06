@@ -6,6 +6,7 @@
 .main-container{
     display:flex;
     flex-direction:column;
+    position: relative;
 }
 
 
@@ -17,13 +18,18 @@
     justify-content:space-between;
     border-bottom: 1px solid #e8e6e6;
     height:60px;
-    height:80px;
 }
+
+.logo{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
 .container{
     display:flex;
     flex-direction:row;
     list-style:none; 
-    padding:0px;
 }
 
 .container> li {
@@ -43,10 +49,18 @@
 }
 
 .navbar-inner-left{
-    width:100%;
+    display:flex;
+    flex-direction:row;
+    position: absolute;
+    left: 75px;
 }
 
 .navbar-inner-right{
+    position: absolute;
+    right: 0;
+}
+
+.hamburger-icon{
     display:none;
 }
 
@@ -61,6 +75,13 @@ MENUBAR */
     box-shadow: 5px 5px 5px #dad8d8;
     height:60px;
     margin-bottom: -10px}
+
+    .menubar-container-icon{
+        opacity: 1;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    }
 
 /* SEARCHBOX */
 
@@ -109,9 +130,6 @@ MENUBAR */
 /* STAGES */
 .accordian{
     text-align: left;
-    position:relative;
-    width:100px;
-    z-index: 9999;
 }
 .accordian ul{
    list-style:none;   
@@ -129,18 +147,11 @@ MENUBAR */
  }
 
  .accordian-card{
-    padding-left: 0px;
     font-weight: 400;
-    margin-top:0px;
-    width:185px;
-    position:absolute;
-    top:55px;
  }
 
  .accordian_card-body > ul {
-    padding-left: 0px;
-    background-color:white;
-    width:auto;
+    
  }
 
  .accordian_card-body  > ul >li {
@@ -208,14 +219,30 @@ MENUBAR */
     font-weight: inherit;
 }
 
+.lower-container-left-dropdown {
+    padding-bottom: 19px;
+    padding-left: 58px;
+    padding: 10px;
+    width: 242px;
+    border: 0
+}
+
+.lower-container-left-dropdown select{
+    width: 205px;
+    height: 35px;
+    border: 0;
+    font-size: 14px;
+    font-weight: inherit;
+}
+
 .filter-button{
     font-weight: 500;
     font-size: 13px;
     background-color: #316ce2;
     height: 39px;
-    width: 252px;
+    /* width: 252px; */
     padding: 0px 60px;
-    margin-left: 42px;
+    /* margin-left: 31px; */
     color: white;
     border-style: solid;
     border-width: 1px;
@@ -281,9 +308,43 @@ MENUBAR */
 
 
     @media  (min-width: 360px) and (max-width: 767px) {
-        .menubar{
+
+        .container{
+            padding:0px;
+        }
+        .navbar{
+            height:80px;
+        }
+
+        .navbar-inner-left{
+            width:100%;
+        }
+        
+        .navbar-inner-right{
             display:none;
         }
+
+        .hamburger-icon{
+            display:unset;
+            position: absolute;
+            right: 10px;
+            height: 20px;
+            top: 15px;
+        }
+
+        .menubar{
+            /* display:none; */
+        }
+
+        .container li:last-child{
+            display:none;
+        }
+
+        .menubar-inner-right{
+            display:none;
+        }
+
+       
 
         .lower-container {
             display: flex;
@@ -314,7 +375,10 @@ MENUBAR */
             text-align:unset;
             padding-left: 0px;
             padding: 0px;
-            width: -webkit-fill-available;
+            /* width: -webkit-fill-available; */
+            position:relative;
+            width:100px;
+            z-index: 9999;
             /* justify-content: space-between; */
         }
         .lower-container-right {
@@ -337,6 +401,20 @@ MENUBAR */
             border-right: 1px solid #a59e9e;
             margin-top: 22px;
         }
+
+        .accordian-card{
+            padding-left: 0px;
+            margin-top:0px;
+            width:185px;
+            position:absolute;
+            top:55px;
+         }
+
+         .accordian_card-body > ul {
+            padding-left: 0px;
+            background-color:white;
+            width:auto;
+         }
 
         .accordian-image img {
             display: none;
@@ -412,6 +490,28 @@ MENUBAR */
             width: 100%;
         }
       }
+
+      @media screen and (max-width: 600px) {
+        .navbar div:not(:first-child) {display: none;}
+        .navbar div.hamburger-icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .navbar.responsive {position: relative;}
+        .navbar.responsive .hamburger-icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .navbar.responsive div {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+    }
 
 
 
