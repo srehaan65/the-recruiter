@@ -57,6 +57,8 @@ class LowerNavbar extends Component {
                         <li className="menubar-dropdown"><a to="/">Add new JOb</a></li>
                     </ul>
                 </div>
+                
+                
             </div>
         )
     }

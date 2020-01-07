@@ -3,9 +3,10 @@ import React from 'react';
 const DetailsElement = () => {
   return (
     <div className="details-element">
+      <div className="name-initial">S</div>
       <div className="details-element-name">
         <div>Sagar Pradhan</div>
-        <div>Quality Assurance</div>
+        <div className="description">Quality Assurance</div>
       </div>
 
       <div className="details-element-status">

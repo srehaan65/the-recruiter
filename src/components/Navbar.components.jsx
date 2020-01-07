@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Dropdown from './Homepage/Dropdown.component'
+import Dropdown from './Homepage/Dropdown.component';
+import { Button, CardBody, Card } from 'reactstrap';
+
 
 class Navbar extends Component {
     myFunction(e){
         e.preventDefault();
         if(this.state.navbar=='navbar'){
             this.setState({navbar:`${this.state.navbar} responsive`})
+            document.getElementById("lower-container").style.display = "none";
         }
         else{
             this.setState({navbar:"navbar"})
+            document.getElementById("lower-container").style.display = "flex";
+
         }
     }
     constructor(props){
@@ -23,7 +28,6 @@ class Navbar extends Component {
     render() {
                 return (
             <div className={this.state.navbar}>
-
                 <div className="logo">
                      <a>
                       <img
@@ -35,7 +39,7 @@ class Navbar extends Component {
 
                 <div className="navbar-inner-left">
                     <ul className="container">
-                        <li className="navbar-jobs"><a to="/">Jobs</a></li>
+                        <li ><a to="/">Jobs</a></li>
                         <li><a to="/">Calendar</a></li>
                         <li><a to="/">Career Page</a></li>
                         <li><a to="/">Reports</a></li>
@@ -78,8 +82,10 @@ class Navbar extends Component {
                     </ul>
                 </div>
 
-                <div className="hamburger-icon">
-                   <i className="fa fa-bars" onClick={this.myFunction}></i>
+                <div className="hamburger-icon" onClick={this.myFunction}>
+                   {this.state.navbar==='navbar' ? 
+                   (<i className="fa fa-bars" ></i>)
+                :<i class="fa fa-times" aria-hidden="true"></i>}
                 </div>
 
             </div>

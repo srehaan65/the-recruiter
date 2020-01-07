@@ -34,7 +34,7 @@ class Homepage extends Component {
                 <Navbar />
                 <LowerNavbar />
 
-                <div className="lower-container">
+                <div id="lower-container" className="lower-container">
                     <div className="lower-container-left">
                         <Searchbox />
                         <Stages />
