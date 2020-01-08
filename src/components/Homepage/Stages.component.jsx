@@ -34,7 +34,7 @@ class Stages extends Component {
                                 <li>Technical Interview<span>  xx</span></li>
                                 <li>Final Interview<span>  xx</span></li>
                                 <li>Completed<span>  xx</span></li>
-                                <li><span><img
+                                <li><span className="pipeline-icon"><img
                                     src="/images/align-justify.png" alt="plus" height="15px"
                                     style={{ opacity: "1" }} >
 

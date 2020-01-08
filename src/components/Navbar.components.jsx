@@ -52,12 +52,11 @@ class Navbar extends Component {
                             <select className="lower-container-right-dropdown">
                                 <option value="volvo">
                                    Nimap Infotech</option>
-                                <option value="saab">Saab</option>
-                                <option value="mercedes">Mercedes</option>
-                                <option value="audi">Audi</option>
-                                <option value="saab">Saab</option>
-                                <option value="mercedes">Mercedes</option>
-                                <option value="audi">Audi</option>
+                                <option value="mercedes">Nimap Infotech</option>
+                                <option value="audi">Nimap Infotech</option>
+                                <option value="saab">Nimap Infotech</option>
+                                <option value="mercedes">Nimap Infotech</option>
+                                <option value="audi">Nimap Infotech</option>
                             </select>
                         </li>
 

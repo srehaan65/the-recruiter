@@ -23,12 +23,12 @@ const DetailsElement = () => {
 
       <div className="details-element-addedby">
         <div>Akansha Sharma</div>
-        <div>Timestamp {Date.now()}</div>
+        <div className="timestamp">Jan 07 2020 13:29:05</div>
       </div>
 
       <div className="details-element-addedby">
         <div>Akansha Sharma</div>
-        <div>Timestamp {Date.now()}</div>
+        <div className="timestamp"> Jan 08 2020 10:49:25 </div>
       </div>
 
       <div className="details-element-icons">
