@@ -7,6 +7,7 @@ const DetailsElement = () => {
       <div className="details-element-name">
         <div>Sagar Pradhan</div>
         <div className="description">Quality Assurance</div>
+        <div><button className="details-button">+ Add Tag</button></div>
       </div>
 
       <div className="details-element-status">

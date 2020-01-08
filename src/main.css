@@ -36,6 +36,11 @@
     text-decoration: none;
     margin-right: 24px;
 }
+
+.container> li :hover {
+    color: #1c1ce9;
+}
+
 .container > li > a{
     text-decoration: none;  
 }
@@ -334,6 +339,16 @@ MENUBAR */
     color: #6d7171;
 }
 
+.details-button{
+    align-content: center;
+    font-size: 10px;
+    background: white;
+    border-style: none;
+    border: 1px solid #b7b0b0;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
 .details-element-status{
     font-weight: 500;
     flex-basis: 10%;
@@ -465,7 +480,7 @@ MENUBAR */
         .pipeline-icon{
             margin-right: 10px;
          }
-         
+
         .lower-container-right {
             display: flex;
             flex-basis:unset;
