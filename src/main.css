@@ -164,6 +164,10 @@ MENUBAR */
  }
  
 
+ .pipeline-icon{
+    margin-right: 10px;
+ }
+
 
  /* EVENTS */
 
@@ -324,6 +328,12 @@ MENUBAR */
     margin-right: 0px;
 }
 
+.description{
+    font-size: 10px;
+    font-weight: 300;
+    color: #6d7171;
+}
+
 .details-element-status{
     font-weight: 500;
     flex-basis: 10%;
@@ -344,6 +354,12 @@ MENUBAR */
     flex-direction: column;
     font-weight: 500;
     flex-basis: 10%;
+}
+
+.timestamp{
+    font-size: 10px;
+    font-weight: 300;
+    color: #6d7171;
 }
 
 .details-element-icons{
@@ -445,6 +461,11 @@ MENUBAR */
             z-index: 9999;
             /* justify-content: space-between; */
         }
+
+        .pipeline-icon{
+            margin-right: 10px;
+         }
+         
         .lower-container-right {
             display: flex;
             flex-basis:unset;
@@ -472,6 +493,8 @@ MENUBAR */
             width:185px;
             position:absolute;
             top:55px;
+            border: 2px solid #f2efef;
+    border-top: 0;
          }
 
          .accordian_card-body > ul {
